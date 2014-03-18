@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+
+	.header {
+		width: 100%;
+	}
+
+	.movieContainer {
+		width: 100%;
+
+	}
+
+	.movie {
+		width: 50%;
+	}
+}
+
+@media (max-width: 450px) {
+	.movie {
+		width: 100%;
+	}
+
+	.movie {
+		overflow: hidden;
+	}
+
+
+}

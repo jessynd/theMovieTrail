@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>starRating</title>
+</head>
+<body>
+	<fieldset class="rating">
+	    <legend>Please rate:</legend>
+	    <input type="radio" id="star5" name="rating" value="5">
+	    <label for="star5">5 stars</label>
+	    <input type="radio" id="star4" name="rating" value="4">
+	    <label for="star4">4 stars</label>
+	    <input type="radio" id="star3" name="rating" value="3">
+	    <label for="star3">3 stars</label>
+	    <input type="radio" id="star2" name="rating" value="2">
+	    <label for="star2">2 stars</label>
+	    <input type="radio" id="star1" name="rating" value="1">
+	    <label for="star1">1 star</label>
+	</fieldset>
+	
+	<style>
+		.rating{
+			float: left;
+		}
+		.rating:not(:checked) label{
+			font-size: 0;
+			cursor: pointer;
+			float: right;
+		}
+		.rating:not(:checked) input[type="radio"]{
+			display: none;
+		}
+		.rating:not(:checked) label:before{
+			content : '\2605';
+			font-size: 30px;
+			color:lightgrey;
+		}
+		.rating:not(:checked) label:hover:before{
+			color: goldenrod;
+		}
+		.rating:not(:checked) input:checked ~ label:before{
+			color:goldenrod;
+		}
+		.rating:not(:checked) label:hover ~ label:before{
+			color:goldenrod;
+		}
+
+	</style>
+</body>
+</html>
